@@ -317,7 +317,7 @@ const drawChart = async () => {
 
   if (!canvas.value || !data.length) return
 
-  candleData = data.slice(-300).map(p => ({
+  candleData = data.slice(-1000).map(p => ({
     x: parseTime(p.time),
     o: p.open,
     h: p.high,
